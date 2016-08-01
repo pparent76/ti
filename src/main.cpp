@@ -40,7 +40,7 @@ main(int argc, char **argv) {
         cout<<"Cannot initialise SDL"<<endl;
         exit (1) ;
     }
-    SDL_Surface *display=SDL_SetVideoMode(400, 240, 16, SDL_SWSURFACE|SDL_ANYFORMAT|SDL_DOUBLEBUF/*|SDL_FULLSCREEN*/);
+    SDL_Surface *display=SDL_SetVideoMode(400, 240, 16, SDL_SWSURFACE|SDL_DOUBLEBUF/*|SDL_FULLSCREEN*/);
     if (display==NULL)
     {
         cout<<"Can't open a SDL display for unknown reason, exiting"<<endl;
